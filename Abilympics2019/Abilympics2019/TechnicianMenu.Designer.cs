@@ -31,25 +31,31 @@
             this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.dbDataSet = new Abilympics2019.dbDataSet();
-            this.assignedOrdersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.assignedOrdersTableAdapter = new Abilympics2019.dbDataSetTableAdapters.AssignedOrdersTableAdapter();
-            this.tableAdapterManager = new Abilympics2019.dbDataSetTableAdapters.TableAdapterManager();
-            this.assignedOrdersDataGridView = new System.Windows.Forms.DataGridView();
+            this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.assignedOrdersDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button4 = new System.Windows.Forms.Button();
+            this.assignedOrdersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dbDataSet = new Abilympics2019.dbDataSet();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -63,26 +69,20 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.assignedOrdersTableAdapter = new Abilympics2019.dbDataSetTableAdapters.AssignedOrdersTableAdapter();
+            this.tableAdapterManager = new Abilympics2019.dbDataSetTableAdapters.TableAdapterManager();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dbDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.assignedOrdersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.assignedOrdersDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assignedOrdersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbDataSet)).BeginInit();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -112,6 +112,61 @@
             this.panel1.Size = new System.Drawing.Size(439, 743);
             this.panel1.TabIndex = 0;
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.button3);
+            this.panel4.Controls.Add(this.button2);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(0, 593);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(439, 150);
+            this.panel4.TabIndex = 2;
+            // 
+            // button3
+            // 
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(100, 90);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(220, 51);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "Выход";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(100, 33);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(220, 51);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "Мой профиль";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.button1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 314);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(439, 111);
+            this.panel3.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(100, 31);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(220, 51);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Заявки";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.pictureBox1);
@@ -130,25 +185,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(439, 314);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.button1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 314);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(439, 111);
-            this.panel3.TabIndex = 1;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.button3);
-            this.panel4.Controls.Add(this.button2);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 593);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(439, 150);
-            this.panel4.TabIndex = 2;
             // 
             // tabControl1
             // 
@@ -178,6 +214,65 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.White;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button4.Location = new System.Drawing.Point(541, 680);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(245, 48);
+            this.button4.TabIndex = 2;
+            this.button4.Text = "Удалить заявку";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(381, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(105, 38);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Заявки";
+            // 
+            // assignedOrdersDataGridView
+            // 
+            this.assignedOrdersDataGridView.AutoGenerateColumns = false;
+            this.assignedOrdersDataGridView.BackgroundColor = System.Drawing.Color.White;
+            this.assignedOrdersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.assignedOrdersDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2});
+            this.assignedOrdersDataGridView.DataSource = this.assignedOrdersBindingSource;
+            this.assignedOrdersDataGridView.Location = new System.Drawing.Point(0, 83);
+            this.assignedOrdersDataGridView.Name = "assignedOrdersDataGridView";
+            this.assignedOrdersDataGridView.RowHeadersVisible = false;
+            this.assignedOrdersDataGridView.Size = new System.Drawing.Size(792, 589);
+            this.assignedOrdersDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "OrderID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID заявки";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Technician";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Техник";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 200;
+            // 
+            // assignedOrdersBindingSource
+            // 
+            this.assignedOrdersBindingSource.DataMember = "AssignedOrders";
+            this.assignedOrdersBindingSource.DataSource = this.dbDataSet;
+            // 
+            // dbDataSet
+            // 
+            this.dbDataSet.DataSetName = "dbDataSet";
+            this.dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tabPage2
             // 
@@ -210,114 +305,69 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // textBox8
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(100, 31);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(220, 51);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Заявки";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.textBox8.Location = new System.Drawing.Point(208, 449);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.ReadOnly = true;
+            this.textBox8.Size = new System.Drawing.Size(328, 45);
+            this.textBox8.TabIndex = 54;
             // 
-            // button2
+            // textBox7
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(100, 33);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(220, 51);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Мой профиль";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.textBox7.Location = new System.Drawing.Point(208, 398);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
+            this.textBox7.Size = new System.Drawing.Size(328, 45);
+            this.textBox7.TabIndex = 53;
             // 
-            // button3
+            // textBox6
             // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(100, 90);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(220, 51);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Выход";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            this.textBox6.Location = new System.Drawing.Point(208, 346);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
+            this.textBox6.Size = new System.Drawing.Size(328, 45);
+            this.textBox6.TabIndex = 52;
             // 
-            // dbDataSet
+            // textBox5
             // 
-            this.dbDataSet.DataSetName = "dbDataSet";
-            this.dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.textBox5.Location = new System.Drawing.Point(208, 295);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
+            this.textBox5.Size = new System.Drawing.Size(328, 45);
+            this.textBox5.TabIndex = 51;
             // 
-            // assignedOrdersBindingSource
+            // textBox4
             // 
-            this.assignedOrdersBindingSource.DataMember = "AssignedOrders";
-            this.assignedOrdersBindingSource.DataSource = this.dbDataSet;
+            this.textBox4.Location = new System.Drawing.Point(208, 244);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
+            this.textBox4.Size = new System.Drawing.Size(328, 45);
+            this.textBox4.TabIndex = 50;
             // 
-            // assignedOrdersTableAdapter
+            // textBox3
             // 
-            this.assignedOrdersTableAdapter.ClearBeforeFill = true;
+            this.textBox3.Location = new System.Drawing.Point(208, 193);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(328, 45);
+            this.textBox3.TabIndex = 49;
             // 
-            // tableAdapterManager
+            // textBox2
             // 
-            this.tableAdapterManager.AssignedOrdersTableAdapter = this.assignedOrdersTableAdapter;
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.OrdersTableAdapter = null;
-            this.tableAdapterManager.TypeAccountTableAdapter = null;
-            this.tableAdapterManager.TypeServicesTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = Abilympics2019.dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.WorkersTableAdapter = null;
+            this.textBox2.Location = new System.Drawing.Point(208, 142);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(328, 45);
+            this.textBox2.TabIndex = 48;
             // 
-            // assignedOrdersDataGridView
+            // textBox1
             // 
-            this.assignedOrdersDataGridView.AutoGenerateColumns = false;
-            this.assignedOrdersDataGridView.BackgroundColor = System.Drawing.Color.White;
-            this.assignedOrdersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.assignedOrdersDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2});
-            this.assignedOrdersDataGridView.DataSource = this.assignedOrdersBindingSource;
-            this.assignedOrdersDataGridView.Location = new System.Drawing.Point(0, 83);
-            this.assignedOrdersDataGridView.Name = "assignedOrdersDataGridView";
-            this.assignedOrdersDataGridView.RowHeadersVisible = false;
-            this.assignedOrdersDataGridView.Size = new System.Drawing.Size(792, 589);
-            this.assignedOrdersDataGridView.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(381, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 38);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Заявки";
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "OrderID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID заявки";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Technician";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Техник";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 200;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Location = new System.Drawing.Point(541, 680);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(245, 48);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Удалить заявку";
-            this.button4.UseVisualStyleBackColor = false;
+            this.textBox1.Location = new System.Drawing.Point(208, 91);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(328, 45);
+            this.textBox1.TabIndex = 47;
             // 
             // button7
             // 
@@ -435,61 +485,19 @@
             this.label7.TabIndex = 34;
             this.label7.Text = "Мой профиль";
             // 
-            // textBox1
+            // assignedOrdersTableAdapter
             // 
-            this.textBox1.Location = new System.Drawing.Point(208, 91);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(328, 45);
-            this.textBox1.TabIndex = 47;
+            this.assignedOrdersTableAdapter.ClearBeforeFill = true;
             // 
-            // textBox2
+            // tableAdapterManager
             // 
-            this.textBox2.Location = new System.Drawing.Point(208, 142);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(328, 45);
-            this.textBox2.TabIndex = 48;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(208, 193);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(328, 45);
-            this.textBox3.TabIndex = 49;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(208, 244);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(328, 45);
-            this.textBox4.TabIndex = 50;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(208, 295);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(328, 45);
-            this.textBox5.TabIndex = 51;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(208, 346);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(328, 45);
-            this.textBox6.TabIndex = 52;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(208, 398);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(328, 45);
-            this.textBox7.TabIndex = 53;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(208, 449);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(328, 45);
-            this.textBox8.TabIndex = 54;
+            this.tableAdapterManager.AssignedOrdersTableAdapter = this.assignedOrdersTableAdapter;
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.OrdersTableAdapter = null;
+            this.tableAdapterManager.TypeAccountTableAdapter = null;
+            this.tableAdapterManager.TypeServicesTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = Abilympics2019.dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.WorkersTableAdapter = null;
             // 
             // TechnicianMenu
             // 
@@ -504,18 +512,18 @@
             this.Load += new System.EventHandler(this.TechnicianMenu_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.assignedOrdersDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assignedOrdersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbDataSet)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dbDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.assignedOrdersBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.assignedOrdersDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
